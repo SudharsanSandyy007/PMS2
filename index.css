@@ -1,0 +1,12 @@
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0px;
+}
+
+.login__form {
+  background-color: red;
+}
+
+input {
+  padding: 100px;
+}

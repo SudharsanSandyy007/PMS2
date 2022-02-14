@@ -1,0 +1,11 @@
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  min-width: 100vw;
+}

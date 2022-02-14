@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: #89d4cf;
+        background-image: linear-gradient(315deg, #89d4cf 0%, #6e45e1 74%);
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 100vh;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        color: white;
+      }
+
+      .login__form {
+        position: relative;
+
+        background-color: white;
+        color: black;
+        font-weight: 600;
+        max-height: 600px;
+        max-width: 500px;
+        border-radius: 10px;
+        margin: 50px;
+        padding: 10%;
+      }
+      input {
+        padding: 10px;
+      }
+      .login__top {
+        position: absolute;
+        top: 10px;
+        right: 230px;
+      }
+      .login__container {
+        display: grid;
+        place-items: center;
+      }
+      #login__btn {
+        width: 260px;
+        border: 2px solid #89d4cf;
+        background-color: rgb(230, 35, 67);
+        cursor: pointer;
+        font-weight: 600;
+        transition: 0.3s;
+      }
+      #login__btn:hover {
+        transform: scale(1.1);
+      }
+      input {
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="login__container">
+      <div class="login__top__title">
+        <center>
+          <h1>PRODUCT MANAGEMENT SYSTEM</h1>
+        </center>
+      </div>
+
+      <div class="login__form">
+        <form action="handlelogin.php" method="post">
+          <div class="login__top">
+            <h1>LOGIN</h1>
+          </div>
+
+          <div class="login__bottom">
+            <label for="userid">User ID: </label>
+            &nbsp; &nbsp;
+            <input
+              type="text"
+              name="userid"
+              id="userid"
+              placeholder="Enter User ID: "
+            />
+            <br />
+            <label for="password">Password:</label>
+            <input
+              type="text"
+              name="pass"
+              id="password"
+              placeholder="Enter Password"
+            />
+            <br />
+            <br />
+            <br />
+            <input type="submit" id="login__btn" value="LOGIN" />
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
